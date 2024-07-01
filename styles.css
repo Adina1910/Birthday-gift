@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    position: relative;
+}
+h1{
+    font-family: 'Kaufmann BT', cursive;
+    font-size: 60px; ;
+    color: #7e1d97;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: relative;
+}
+.button {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #c285d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+}
+.button:hover {
+    background-color: #000000;
+}
+.poem-display {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+.poem-content {
+    text-align: left;
+    font-size: 18px;
+}
+.close-poem {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #c285d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close-poem:hover {
+    background-color: #000000;
+}
+footer{
+    font-family: Avenir Next LT Pro;
+    text-align: center;
+    color: #7e1d97;
+}
